@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Domenico Pasquale</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Roboto&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body data-spy="scroll" data-target="#navbar">
+    <!-- NavBar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top animate">
+       <div class="navbar-header">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+           <span class="sr-only">Toggle navigation</span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+         <a class="navbar-brand" href="#"><img class="img-logo" src="img/logo-dp-black.png"></a>
+       </div>
+       <div id="navbar" class="collapse navbar-collapse">
+         <ul class="nav navbar-nav navbar-right">
+           <li class="active"><a href="#home">Home</a></li>
+           <li><a href="#skills-panel">Abilità</a></li>
+           <li><a href="#about-panel">Su di Me</a></li>
+           <li><a href="#contacts-panel">Contatti</a></li>
+         </ul>
+       </div>
+     </nav>
+     <!-- Home -->
+     <section id="home" class="parallax">
+       <h1 class="main_title">👋🏻 Ciao,<br> Sono Domenico Pasquale</h1>
+        <h3 class="subtitle">"Spero di diventare uno Sviluppatore Web"</h3>
+          <a href="#contacts" class="button-home scroll-animate">Contattami</a>
+            <p class="arrow"><i class="fa fa-angle-down"></i></p>
+     </section>
+     <!-- Skills -->
+     <section id="skills" class="container-skills">
+          <div class="module">
+            <h3 class="main_title">Abilità</h3>
+              <i class="icons far fa-file-code"></i>
+              <i class="icons fab fa-html5"></i>
+              <i class="icons fab fa-css3-alt"></i>
+              <i class="icons fab fa-sass"></i>
+              <i class="icons fab fa-bootstrap"></i>
+              <i class="icons fab fa-mdb"></i>
+              <i class="icons fab fa-git"></i>
+              <i class="icons fab fa-js"></i>
+              <i class="icons fab fa-php"></i>
+          </div>
+     </section>
+     <!-- About -->
+     <section id="about">
+      <div class="row no-margin bg-row">
+        <div class="col-md-6 content-foto">
+          <a class=""><img class="" src="img/profilo.png" alt=""></a>
+        </div>
+        <div class="col-md-6 no-margin">
+          <div class="content-about">
+            <h3 class="main_title">Su di Me</h3>
+              <p class="about-text">❌ Ho sbagliato il settore della mia istruzione superiore.<br>
+              ❌ Ho perso anni lavorando ovunque, ma mai per ciò che più mi appassionava.<br>
+              ♻️ Questi errori mi hanno portato alla svolta.<br>
+              💙 Se amo il mio lavoro, sarà come non lavorare affatto.<br>
+              💻 E allora, adesso studio per diventare Sviluppatore Web e App.</p>
+          </div>
+
+        </div>
+      </div>
+     </section>
+     <!-- Contacts -->
+     <div class="container-contacts">
+        <section id="contacts" class="contacts">
+            <h3 class="main_title text-center">👇🏻Contattami👇🏻</h3>
+              <form action="">
+                <div class="row">
+                  <div class="col-35">
+                    <label for="fname">Nome</label>
+                  </div>
+                  <div class="col-90">
+                    <input type="text" id="fname" name="firstname" placeholder="Nome e Cognome">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-35">
+                    <label for="subject">Messaggio</label>
+                  </div>
+                  <div class="col-90">
+                    <textarea id="subject" name="subject" placeholder="Scrivi qualcosa..." style="height:200px"></textarea>
+                  </div>
+                </div>
+                  <a href="#contacts" class="button-contacts scroll-animate">Invia</a>
+              </form>
+        </section>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <div class="container-icons">
+        <a class="space social-icon" href="mailto: domenicopasq@gmail.com"><i class="far fa-envelope"></i></a>
+        <a class="space social-icon" href="https://api.whatsapp.com/send?phone=393270211233"><i class="fab fa-whatsapp"> </i></a>
+        <a class="space social-icon" href="https://instagram.com/domenicopasq/"><i class="fab fa-instagram"></i></a>
+        <a class="space social-icon" href="https://www.linkedin.com/in/domenicopasquale/"><i class="fab fa-linkedin"></i></a>
+        <a class="space social-icon" href="https://github.com/domenicopasquale"><i class="fab fa-github"></i></a>
+        <a class="space social-icon" href="https://t.me/domenicopasq"><i class="fab fa-telegram"></i></a>
+      </div>
+        <p class="text-center">Domenico Pasquale - via Pola, 18b - 75012 Bernalda (MT) - Italia<br>
+        <i class="social-icon fas fa-phone-alt"></i><a class="social-icon" href="tel:+39 3270211233"> +39 3270211233</a></p>
+    </footer>
+    <!-- Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $('body').scrollspy({ target: '#navbar' });
+      $(".navbar-collapse ul li a[href^='#'], .scroll-animate").on('click',function(e){
+        target = this.hash;
+        e.preventDefault();
+        $('html,body').animate({
+          scrollTop : $(this.hash).offset().top
+        }, 600, function(){
+          window.location.hash = target;
+        });
+        $(".navbar-collapse").collapse('hide');
+      });
+      var scroll = 0;
+      $(document).scroll(function(){
+        scroll = $(this).scrollTop();
+        if(scroll > 200){
+          $(".navbar").css({"background-color": "#F4EBE1", "margin-top" : "0px"});
+        } else {
+          $(".navbar").css({"background-color": "transparent", "margin-top" : "20px"});
+        }
+      });
+    });
+    </script>
+  </body>
+</html>
